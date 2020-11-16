@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, redirect, url_for
+from flask import Flask, jsonify, redirect, url_for, render_template
 
 # create an instance of our app
 app = Flask(__name__)
@@ -32,7 +32,12 @@ def login():
 
 @app.route("/<username>/")
 def welcome_user(username):
-    return f"<h1>Welcome to the dream team of DevOps dear {username}</h1>"
+    return f"<h1> Welcome to the dream team of DevOps dear {username}</h1>"
+
+@app.route("/index/")
+def index():
+    return render_template("index.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

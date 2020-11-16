@@ -29,4 +29,11 @@ pip install flask
 ```
 flask run
 ```
-- 
+**interacting with HTML**
+- Naming conventions are essential
+- we need create templates folder in our dir
+- flask looks for templates folder and anything inside the folder
+- we will create index.html inside our templates folder
+
+
+- Bootstrap to design our page with HTML, CSS JS 
